@@ -5,16 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
+    tools:context=".Linear_layout_horizontal"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <EditText
         android:id="@+id/edt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="enter a value"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         />
@@ -27,6 +29,12 @@
 
         android:textStyle="italic"
         />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <EditText
         android:id="@+id/edt2"
         android:layout_width="wrap_content"
@@ -43,11 +51,18 @@
         android:textSize="20sp"
         android:textStyle="italic"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <EditText
         android:id="@+id/edt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="enter a value"
+        android:layout_weight="1"
         android:textStyle="bold"
         android:textSize="20sp"
         />
@@ -55,9 +70,10 @@
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="button3"
         android:textStyle="italic"
         android:textSize="20sp"/>
-
+    </LinearLayout>
 
 </LinearLayout>
